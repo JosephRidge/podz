@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:podz/pages/games/games.dart';
 import 'package:podz/pages/secondScreen/second.dart';
+import 'package:podz/pages/shoes/sports.dart';
 import 'package:podz/pages/sports/sports.dart';
 import 'package:podz/pages/trial_codes.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const SportsPage(),
+      home: const ShoesPage(),
     );
   }
 }
