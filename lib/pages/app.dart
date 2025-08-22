@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:podz/pages/home/home.dart';
+import 'package:podz/pages/games/games.dart';
+import 'package:podz/pages/secondScreen/second.dart';
+import 'package:podz/pages/sports/sports.dart';
+import 'package:podz/pages/trial_codes.dart';
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -8,12 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-         
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const SportsPage(),
     );
   }
 }
